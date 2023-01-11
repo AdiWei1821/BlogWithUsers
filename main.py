@@ -11,6 +11,10 @@ from forms import CreatePostForm, RegistrationForm, LoginForm, CommentForm
 from flask_gravatar import Gravatar
 from functools import wraps
 from sqlalchemy import Table, Column, Integer, ForeignKey
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
